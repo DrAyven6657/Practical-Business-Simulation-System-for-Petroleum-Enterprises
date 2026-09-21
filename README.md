@@ -8,7 +8,11 @@
 python app.py
 ```
 
+
+
 本地必须装有python才可运行！
+
+
 
 启动后打开：
 
