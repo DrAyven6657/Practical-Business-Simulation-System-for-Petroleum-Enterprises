@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import zipfile; z=zipfile.ZipFile\\('课程要求.docx'\\); from xml.etree import ElementTree as ET; ns='{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'; doc=ET.parse\\(z.open\\('word/document.xml'\\)\\); print\\('\\\\n'.join\\(p.text for p in doc.findall\\('.//'+ns+'p'\\) if p.text\\)\\)\")",
+      "Bash(python -c \"from docx import Document; doc=Document\\('课程要求.docx'\\); [print\\(p.text\\) for p in doc.paragraphs]\")",
+      "Bash(python *)",
+      "Bash(curl -s http://127.0.0.1:8000/api/state)",
+      "Bash(curl -s -X POST http://127.0.0.1:8000/api/decision -H \"Content-Type: application/json\" -d \"{\\\\\"quarter\\\\\":\\\\\"2026Q1\\\\\",\\\\\"crude_purchase\\\\\":8000,\\\\\"production\\\\\":7600,\\\\\"selling_price\\\\\":4380,\\\\\"marketing_budget\\\\\":180000,\\\\\"admin_cost\\\\\":120000,\\\\\"notes\\\\\":\\\\\"测试\\\\\"}\")",
+      "Bash(curl -s -X POST http://127.0.0.1:8000/api/reset -H \"Content-Type: application/json\" -d \"{}\")",
+      "Bash(kill %1)",
+      "Bash(pip install *)"
+    ]
+  }
+}
