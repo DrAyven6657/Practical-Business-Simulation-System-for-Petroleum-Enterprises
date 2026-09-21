@@ -8,11 +8,7 @@
 python app.py
 ```
 
-如果系统默认 Python 不可用，也可以使用 Codex 本地运行时：
-
-```powershell
-& 'C:\Users\STAR\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' app.py
-```
+本地必须装有python才可运行！
 
 启动后打开：
 
